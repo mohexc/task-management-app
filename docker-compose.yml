@@ -3,7 +3,7 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: "12345678"
+      POSTGRES_PASSWORD: "postgres"
     ports:
       - "5432:5432"
     volumes:
@@ -14,8 +14,8 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: "monnerat@monnerat.com.br"
-      PGADMIN_DEFAULT_PASSWORD: "abc"
+      PGADMIN_DEFAULT_EMAIL: "pgadmin@yopmail"
+      PGADMIN_DEFAULT_PASSWORD: "pgadmin"
     ports:
       - "5050:80"
     depends_on:
