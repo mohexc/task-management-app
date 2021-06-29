@@ -4,7 +4,6 @@ import { GetTasksFilterDto } from "./dto/get-tasks-filter.dto";
 import { Task } from "./task.entity";
 import { TaskStatus } from "./task.model";
 
-
 @EntityRepository(Task)
 export class TasksRepository extends Repository<Task> {
 
